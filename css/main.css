@@ -1,6 +1,7 @@
-@import url("https://use.typekit.net/xnh3uet.css%22");
+@import url("https://use.typekit.net/rlt0btg.css");
 
 @import './reset.css';
 @import './variables.css';
 @import './base.css';
 
+@import './modules/article-overview.css';
