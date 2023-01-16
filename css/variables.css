@@ -1,3 +1,16 @@
 :root {
-	
+	--first-color: #ffffff;
+	--second-color: #000000;
+	--third-color: #9747ff;
+	--fourth-color: #e7e7e7;
+
+	--font-body-text: 2rem, 'Times New Roman';
+	--font-body-text-uppercase: 2rem, Uppercase, 'Times New Roman';
+	--font-large-text: 4rem/4.8rem, 700 bold, 'Neue Haas Grotesk Text', sans-serif;
+	--font-small-text: 1rem;
+	--font-small-text-uppercase: 1rem/1.2rem, Uppercase, 'Times New Roman';
+
+	--letter-spacing-uppercase: 0.1rem;
+
+	--padding: 1rem;
 }
