@@ -1,0 +1,29 @@
+.article-overview {
+	display: flex;
+	flex-direction: column;
+	grid-column: 1 / 13;
+}
+
+.article-overview__image {
+	width: 100%;
+}
+
+.article-overview__image img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.article-overview__card {
+	background-color: var(--second-color);
+	color: var(--first-color);
+	padding: 1.6rem 1.6rem 5rem 1.6rem;
+}
+
+.article-overview__header {  
+	font: var(--font-body-text);
+}
+
+.article-overview__name {
+	font: var(--font-large-text);
+}
