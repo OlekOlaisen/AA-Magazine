@@ -31,6 +31,6 @@
 	font: var(--font-body-text);
 }
 
-.article-overview__name {
+.article-overview__title {
 	font: var(--font-large-text);
 }
