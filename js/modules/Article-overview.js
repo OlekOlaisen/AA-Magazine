@@ -46,4 +46,32 @@ export default function ArticleOverview() {
 			link: '/article.html',
 		},
 	]
+
+	function renderHTML() {
+		const article = document.createElement('div');
+		article.className = 'article-overview';
+
+		const imageContainer = document.createElement('div');
+		imageContainer.className = 'article-overview__image';
+		const image = document.createElement('img');
+		image.src = '/assets/images/alan-rostovtev-article.png';
+		imageContainer.append(image);
+		article.append(imageContainer);
+
+		const card = document.createElement('div');
+		card.className = 'article-overview__card';
+
+		const cardHeader = document.createElement('p');
+		cardHeader.className = 'article-overview__header';
+		cardHeader.innerText = 'Bauhaus Dessau Foundation';
+
+		const cardName = document.createElement('p');
+		cardName.className = 'article-overview__header';
+		cardName.innerText = 'Bauhaus Lab 2023: Concrete Antarctic';
+		card.append(cardHeader);
+		card.append(cardName);
+		article.append(card);
+
+		layout.append(article);
+	}
 }
