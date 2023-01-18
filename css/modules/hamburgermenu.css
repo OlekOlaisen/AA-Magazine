@@ -8,7 +8,7 @@
 	background: none;
 	border: none;
 	cursor: pointer;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .header__menu-button-burger {
@@ -16,7 +16,7 @@
 	height: 0.4rem;
 	background-color: var(--second-color);
 	border-radius: 0.5rem;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .header__menu-button-burger::before,
@@ -28,7 +28,7 @@
 	height: 0.4rem;
 	background: var(--second-color);
 	border-radius: 0.5rem;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .header__menu-button-burger::before {
