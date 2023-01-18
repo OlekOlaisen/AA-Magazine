@@ -1,7 +1,14 @@
+.article-overview__1-container,
+.article-overview__2-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	grid-column: 1 / 13;
+}
+
 .article-overview {
 	display: flex;
 	flex-direction: column;
-	grid-column: 1 / 13;
 }
 
 .article-overview__image {
@@ -24,6 +31,6 @@
 	font: var(--font-body-text);
 }
 
-.article-overview__name {
+.article-overview__title {
 	font: var(--font-large-text);
 }
