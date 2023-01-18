@@ -5,5 +5,10 @@ html {
 .layout {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
+  	gap: 1rem;
+}
+
+.darkmode {
+	color: white;
+	background-color: var(--second-color);
 }
