@@ -60,7 +60,9 @@ export default function ArticleOverview() {
 	renderHTML();
 
 	function renderHTML() {
-		renderArticles();
+		if (articlesOverview1Container && articlesOverview2Container) {
+			renderArticles();
+		}
 	}
 
 	function renderArticles() {
