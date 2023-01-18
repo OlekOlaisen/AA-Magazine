@@ -1,4 +1,7 @@
 export default function ArticleOverview() {
+	const articlesOverview1Container = document.querySelector('.article-overview__1-container');
+	const articlesOverview2Container = document.querySelector('.article-overview__2-container');
+
 	const articles1 = [
 		{
 			header: 'Anhalt University of Applied Sciences',
@@ -47,33 +50,65 @@ export default function ArticleOverview() {
 		},
 	]
 
+	renderHTML();
+
 	function renderHTML() {
+		renderArticles();
+	}
+
+	function renderArticles() {
 		for (const oneArticle of articles1) {
-		const article = document.createElement('div');
-		article.className = 'article-overview';
+			const article = createArticle(oneArticle.link);
+			const image = createImage(oneArticle.image); 
+			article.append(image);
+			const card = createCard(oneArticle.header, oneArticle.title);
+			article.append(card);
+			articlesOverview1Container.append(article);
+		}
 
-		const imageContainer = document.createElement('div');
-		imageContainer.className = 'article-overview__image';
-		const image = document.createElement('img');
-			image.src = oneArticle.image;
-		imageContainer.append(image);
-		article.append(imageContainer);
+		for (const oneArticle of articles2) {
+			const article = createArticle(oneArticle.link);
+			const image = createImage(oneArticle.image); 
+			article.append(image);
+			const card = createCard(oneArticle.header, oneArticle.title);
+			article.append(card);
+			articlesOverview2Container.append(article);
+		}
 
-		const card = document.createElement('div');
-		card.className = 'article-overview__card';
+		function createArticle(link) {
+			const article = document.createElement('div');
+			article.className = 'article-overview';
+			article.href = link;
 
-		const cardHeader = document.createElement('p');
-		cardHeader.className = 'article-overview__header';
-			cardHeader.innerText = oneArticle.header;
+			return article;
+		}
 
+		function createImage(source) {
+			const imageContainer = document.createElement('div');
+			imageContainer.className = 'article-overview__image';
+
+			const image = document.createElement('img');
+			image.src = source;
+			imageContainer.append(image);
+			
+			return imageContainer;
+		}
+
+		function createCard(header, title) {
+			const card = document.createElement('div');
+			card.className = 'article-overview__card';
+	
+			const cardHeader = document.createElement('p');
+			cardHeader.className = 'article-overview__header';
+			cardHeader.innerText = header;
+	
 			const cardTitle = document.createElement('p');
 			cardTitle.className = 'article-overview__header';
-			cardTitle.innerText = oneArticle.title;
-		card.append(cardHeader);
+			cardTitle.innerText = title;
+			card.append(cardHeader);
 			card.append(cardTitle);
-		article.append(card);
-
-		layout.append(article);
+			
+			return card;
 		}
 	}
 }
