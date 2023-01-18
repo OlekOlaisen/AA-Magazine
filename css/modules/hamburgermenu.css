@@ -55,3 +55,10 @@
 .header__menu-button--visible .header__menu-button-burger::after {
 	transform: rotate(-45deg) translate(-35px, -35px);
 }
+
+/* dark mode */
+.darkmode .header__menu-button div::before,
+.darkmode .header__menu-button div::after,
+.darkmode .header__menu-button div {
+	background-color: var(--first-color);
+}

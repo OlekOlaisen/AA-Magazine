@@ -28,6 +28,12 @@
 }
 
 .header__search-button {
+	display: none;
 	background: none;
 	border: none;
+}
+
+/* Darkmode */
+.darkmode .header__text {
+	color: var(--first-color);
 }
