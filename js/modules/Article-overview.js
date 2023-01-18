@@ -30,7 +30,7 @@ export default function ArticleOverview() {
 		{
 			header: 'Radiowaves Collective',
 			title: 'Mothering a Movement: Notes from India’s Longest Anti-Nuclear Struggle',
-			image: '/assets/images/alan-rostovtev-article.jpg',
+			image: '/assets/images/alan-rostovtev-article.png',
 			link: '/article.html',
 		},
 		{
@@ -42,7 +42,7 @@ export default function ArticleOverview() {
 		{
 			header: 'AA editorial',
 			title: 'The Avant-Garde Museum',
-			image: '/assets/images/tingfeng-xiav.jpg',
+			image: '/assets/images/tingfeng-xia.jpg',
 			link: '/article.html',
 		},
 	]
