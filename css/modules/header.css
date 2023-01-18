@@ -1,16 +1,20 @@
 /* mobile first */
 
 .header {
-	max-height: 344px;
-	max-width: 480px;
-}
+	grid-column-start: 1;
+	grid-column-end: 13;
+	
+} 
 
 .header__logo {
 	margin: 1rem 1rem 2rem 1rem;
-	height: 276px;
-	width: 460px;
+	grid-column-start: 1;
+	grid-column-end: 13;
 }
 
+.header__logo-image {
+	width: 100%;
+}
 .header__content {
 	margin: 1rem;
 	display: flex;
