@@ -1,0 +1,27 @@
+.article {
+	display: flex;
+	flex-direction: column;
+	grid-column: 1 / 13;
+}
+
+.article__image {
+	width: 100%;
+}
+
+.article__image img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.article__heading {  
+	font: var(--font-large-text);
+}
+
+.article__text {
+	font: var(--font-body-text);
+}
+
+.article__figcaption {
+	font: var(--font-small-text);
+}
