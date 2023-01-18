@@ -1,0 +1,33 @@
+/* mobile first */
+
+.header {
+	grid-column-start: 1;
+	grid-column-end: 13;
+	
+} 
+
+.header__logo {
+	margin: 1rem 1rem 2rem 1rem;
+	grid-column-start: 1;
+	grid-column-end: 13;
+}
+
+.header__logo-image {
+	width: 100%;
+}
+.header__content {
+	margin: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__text {
+	font: var(--font-large-text);
+	color: var(--second-color);
+}
+
+.header__search-button {
+	background: none;
+	border: none;
+}
