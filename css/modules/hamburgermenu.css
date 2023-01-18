@@ -1,0 +1,57 @@
+.header__menu-button {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4.4rem;
+	height: 3rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.header__menu-button-burger {
+	width: 4.4rem;
+	height: 0.4rem;
+	background-color: var(--second-color);
+	border-radius: 0.5rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.header__menu-button-burger::before,
+.header__menu-button-burger::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 4.4rem;
+	height: 0.4rem;
+	background: var(--second-color);
+	border-radius: 0.5rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.header__menu-button-burger::before {
+	transform: translateY(-1.2rem);
+}
+
+.header__menu-button-burger::after {
+	transform: translateY(1.2rem);
+}
+
+/* animation */
+/* animated the burger to the right */ 
+
+.header__menu-button--visible .header__menu-button-burger {
+	transform: translateX(5rem);
+	background: transparent;
+	box-shadow: none;
+}
+
+.header__menu-button--visible .header__menu-button-burger::before {
+	transform: rotate(45deg) translate(-35px, 35px);
+}
+
+.header__menu-button--visible .header__menu-button-burger::after {
+	transform: rotate(-45deg) translate(-35px, -35px);
+}
