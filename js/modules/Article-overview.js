@@ -111,7 +111,7 @@ export default function ArticleOverview() {
 			cardHeader.innerText = header;
 	
 			const cardTitle = document.createElement('p');
-			cardTitle.className = 'article-overview__header';
+			cardTitle.className = 'article-overview__title';
 			cardTitle.innerText = title;
 			card.append(cardHeader);
 			card.append(cardTitle);
