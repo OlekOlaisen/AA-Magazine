@@ -7,24 +7,28 @@ export default function ArticleOverview() {
 			header: 'Anhalt University of Applied Sciences',
 			title: 'Dessau Summer School of Architecture',
 			image: '/assets/images/alan-rostovtev.jpg',
+			alt: 'White wall',
 			link: '/article.html',
 		},
 		{
 			header: 'ArkDes',
 			title: 'Joar Nango: Girjegumpi',
 			image: '/assets/images/mohammad-mohsen-rohani.jpg',
+			alt: 'White building',
 			link: '/article.html',
 		},
 		{
 			header: 'Sabu Kohso',
 			title: 'Nuclear Recursivity and Seismic Awakening',
 			image: '/assets/images/albert-stoynov.jpg',
+			alt: 'Angled building',
 			link: '/article.html',
 		},
 		{
 			header: 'Bauhaus Dessau Foundation',
 			title: 'Bauhaus Lab 2023: Concrete Antarctic',
 			image: '/assets/images/brice-cooper.jpg',
+			alt: 'Building with bridge',
 			link: '/article.html',
 		},
 	]
@@ -34,18 +38,21 @@ export default function ArticleOverview() {
 			header: 'Radiowaves Collective',
 			title: 'Mothering a Movement: Notes from India’s Longest Anti-Nuclear Struggle',
 			image: '/assets/images/alan-rostovtev-article.png',
+			alt: 'Glass building',
 			link: '/article.html',
 		},
 		{
 			header: 'Livia Krohn Miller',
 			title: 'Ten Thousand Years of Isolation',
 			image: '/assets/images/refargotohp.jpg',
+			alt: 'White building',
 			link: '/article.html',
 		},
 		{
 			header: 'AA editorial',
 			title: 'The Avant-Garde Museum',
 			image: '/assets/images/tingfeng-xia.jpg',
+			alt: 'Bridge',
 			link: '/article.html',
 		},
 	]
@@ -59,7 +66,7 @@ export default function ArticleOverview() {
 	function renderArticles() {
 		for (const oneArticle of articles1) {
 			const article = createArticle(oneArticle.link);
-			const image = createImage(oneArticle.image); 
+			const image = createImage(oneArticle.image, oneArticle.alt); 
 			article.append(image);
 			const card = createCard(oneArticle.header, oneArticle.title);
 			article.append(card);
@@ -68,7 +75,7 @@ export default function ArticleOverview() {
 
 		for (const oneArticle of articles2) {
 			const article = createArticle(oneArticle.link);
-			const image = createImage(oneArticle.image); 
+			const image = createImage(oneArticle.image, oneArticle.alt); 
 			article.append(image);
 			const card = createCard(oneArticle.header, oneArticle.title);
 			article.append(card);
@@ -83,12 +90,13 @@ export default function ArticleOverview() {
 			return article;
 		}
 
-		function createImage(source) {
+		function createImage(source, alt) {
 			const imageContainer = document.createElement('div');
 			imageContainer.className = 'article-overview__image';
 
 			const image = document.createElement('img');
 			image.src = source;
+			image.alt = alt;
 			imageContainer.append(image);
 			
 			return imageContainer;
