@@ -62,3 +62,23 @@
 .darkmode .header__menu-button div {
 	background-color: var(--first-color);
 }
+
+.header__menu-button-content {
+	display: none;
+}
+
+.header__menu-button-content--visible {
+	display: flex;
+	flex-flow: column;
+	width: 100vw;
+	background-color: white;
+	position: absolute;
+	top: 6.8rem;
+	left: -1rem;
+}
+
+.header__menu-button-link {
+	color: var(--second-color);
+	font: var(--font-large-text);
+	padding: var(--padding);
+}

@@ -4,14 +4,23 @@ export default function Hamburger() {
 	// an abstraction of the HTML (view)
 	let menuVisible = false;
 
+	let dropdownListVisible = false; 
+
 	// create a reference to the Block (BEM) element
 	const menuButton = document.querySelector('.header__menu-button');
+	const contentContainer = document.querySelector('.header__menu-button-content');
 	
 	// check if the "menuButton" exists before attaching an "event-listener"
 	// in this case the menuButton on header exists on every page, so the condition will always be true
-	if (menuButton) {
+	if (menuButton ) {
 		menuButton.addEventListener('click', handleMenuButtonClick);
 	}
+
+	if (contentContainer !== null) {
+		menuButton.addEventListener('click', handleMenuButtonContentClick);
+	}
+
+	
 
 	// split the "handler-function" into separate functions
 	//		you should see at first sight what "clicking the menuButton" does in the code
@@ -20,7 +29,12 @@ export default function Hamburger() {
 	//		"functions should do one thing and one thing only", clean code
 	function handleMenuButtonClick() {
 		toggleMenuVisibility();
-		renderHTML();
+		renderButton();
+	}
+
+	function handleMenuButtonContentClick() {
+		toggleMenuDropdown();
+		renderDropdown();
 	}
 
 	// "methods"
@@ -31,16 +45,29 @@ export default function Hamburger() {
 		menuVisible = !menuVisible;
 	}
 
+	function toggleMenuDropdown() {
+		dropdownListVisible = !dropdownListVisible;
+	}
+
 	// "render"
 	// this function renders (updates) the needed HTML DOM elements based
 	// on the values of the model. this has to be called after the model
 	// has been updated and should preferrably be called once per update,
 	// and only from the handler function
-	function renderHTML() {
+	function renderButton() {
 		if(menuVisible) {
 			menuButton.classList.add('header__menu-button--visible');
 		} else {
 			menuButton.classList.remove('header__menu-button--visible');
 		}
 	}
+
+	function renderDropdown() {
+		if (dropdownListVisible === true) {
+			contentContainer.classList.add('header__menu-button-content--visible')
+		} else {
+			contentContainer.classList.remove('header__menu-button-content--visible')
+		}
+	}
+
 }
