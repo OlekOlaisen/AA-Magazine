@@ -20,7 +20,19 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.header__content--sticky {
+  position: fixed;
+  margin: 1rem;
+  top: -1rem;
+  left: -1rem;
+  width: 100vw;
+  background-color: var(--first-color);
+  padding: var(--padding);
 }
 
 .header__text {
