@@ -50,3 +50,7 @@
 .darkmode .header__text {
 	color: var(--first-color);
 }
+
+.darkmode .header__content--sticky {
+	background-color: var(--second-color);
+}
