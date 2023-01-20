@@ -7,7 +7,7 @@
 } 
 
 .header__logo {
-	margin: 1rem 1rem 2rem 1rem;header__content--sticky
+	/* margin: 1rem 1rem 2rem 1rem;header__content--sticky */
 	grid-column-start: 1;
 	grid-column-end: 13;
 }
