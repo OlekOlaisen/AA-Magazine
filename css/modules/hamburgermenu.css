@@ -41,7 +41,6 @@
 
 /* animation */
 /* animated the burger to the right */ 
-
 .header__menu-button--visible .header__menu-button-burger {
 	transform: translateX(5rem);
 	background: transparent;
@@ -61,6 +60,10 @@
 .darkmode .header__menu-button div::after,
 .darkmode .header__menu-button div {
 	background-color: var(--first-color);
+}
+
+.darkmode .header__menu-button--visible .header__menu-button-burger {
+	background-color: transparent;
 }
 
 .header__menu-button-content {
