@@ -21,7 +21,6 @@ export default function Hamburger() {
 	}
 
 	
-
 	// split the "handler-function" into separate functions
 	//		you should see at first sight what "clicking the menuButton" does in the code
 	//		regardless of the way it's implemented. this is "declarative code".
