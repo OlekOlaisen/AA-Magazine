@@ -1,12 +1,11 @@
 .advertisements {
-	display: grid;
-	grid-column: 1 / 12;
+	display: flex;
+	flex-direction: column;
+	grid-column: 1 / 13;
 }
 
 .advertisements__content {
-	width: 4rem;
-	height: 3rem;
 	/* aspect-ratio: 4/3; */
-	background-color: purple;
-	color: white;
+	background-color: var(--third-color);
+	color: var(--first-color);
 }
