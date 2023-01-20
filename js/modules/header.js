@@ -10,7 +10,6 @@ let sticky = header.offsetTop;
 function stickyNavigation() {
   if (window.pageYOffset >= sticky) {
     header.classList.add("header__content--sticky")
-	 content.style.right = '-1rem';
   } else {
     header.classList.remove("header__content--sticky");
   }
