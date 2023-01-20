@@ -6,6 +6,7 @@
 @import './variables.css';
 @import './base.css';
 
+@import './advertisement.css';
 @import './modules/article-overview.css';
 @import './modules/article.css';
 @import './modules/header.css';
