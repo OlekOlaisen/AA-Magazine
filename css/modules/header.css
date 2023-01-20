@@ -1,15 +1,12 @@
 /* mobile first */
 
 .header {
-	grid-column-start: 1;
-	grid-column-end: 13;
+	grid-column: 1 / 13;
 	
 } 
 
 .header__logo {
-	/* margin: 1rem 1rem 2rem 1rem;header__content--sticky */
-	grid-column-start: 1;
-	grid-column-end: 13;
+	grid-column: 1 / 13;
 }
 
 .header__logo-image {
