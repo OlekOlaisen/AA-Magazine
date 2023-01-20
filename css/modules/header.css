@@ -6,6 +6,9 @@
 
 .header__logo {
 	grid-column: 1 / 13;
+	grid-column-start: 1;
+	grid-column-end: 13;
+
 }
 
 .header__logo-image {

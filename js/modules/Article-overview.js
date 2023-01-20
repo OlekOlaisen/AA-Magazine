@@ -85,7 +85,7 @@ export default function ArticleOverview() {
 		}
 
 		function createArticle(link) {
-			const article = document.createElement('div');
+			const article = document.createElement('a');
 			article.className = 'article-overview';
 			article.href = link;
 
