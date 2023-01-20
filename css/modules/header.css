@@ -1,21 +1,21 @@
 /* mobile first */
 
 .header {
-	grid-column-start: 1;
-	grid-column-end: 13;
-	
+	grid-column: 1 / 13;
 } 
 
 .header__logo {
+	grid-column: 1 / 13;
 	grid-column-start: 1;
 	grid-column-end: 13;
+
 }
 
 .header__logo-image {
 	width: 100%;
 }
+
 .header__content {
-	padding: 1rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -36,6 +36,7 @@
 
 .header__text {
 	font: var(--font-large-text);
+	font-size: 9vw;
 	color: var(--second-color);
 }
 
