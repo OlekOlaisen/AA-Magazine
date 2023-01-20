@@ -1,0 +1,13 @@
+.information {
+	display: flex;
+	flex-direction: column;
+	grid-column: 1 / 13;
+}
+
+.information__heading {  
+	font: var(--font-large-text);
+}
+
+.information__text {
+	font: var(--font-body-text);
+}
