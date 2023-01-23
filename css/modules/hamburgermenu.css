@@ -70,13 +70,15 @@
 	display: none;
 }
 
+.header__content--sticky .header__menu-button-content {
+	padding: 0 1rem;
+}
 
 .header__menu-button-link {
 	color: var(--second-color);
-	font: var(--font-large-text);
-	padding: var(--padding);
+	font: var(--font-large-text-link);
+	text-decoration: none;
 }
-
 
 .header__menu-button-content--visible {
 	display: flex;
@@ -84,7 +86,7 @@
 	width: 100%;
 	background-color: var(--first-color);
 	position: absolute;
-	top: 5.8rem;
+	top: 6.8rem;
 	left: 0;
 }
 

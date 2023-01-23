@@ -33,7 +33,8 @@
   left: -1rem;
   width: 100vw;
   background-color: var(--first-color);
-  padding: var(--padding);
+  padding: 2rem var(--padding) 3rem var(--padding);
+
 }
 
 .header__text {
