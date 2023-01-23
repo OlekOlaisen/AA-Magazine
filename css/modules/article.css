@@ -6,22 +6,33 @@
 
 .article__image {
 	width: 100%;
+	margin-bottom: 1rem;
 }
 
 .article__image img {
 	width: 100%;
 	height: auto;
 	display: block;
+	margin-bottom: 1rem;
 }
 
 .article__heading {  
 	font: var(--font-large-text);
+	margin-bottom: 4rem;
 }
 
 .article__text {
+	font: var(--font-body-text);
+	margin-bottom: 4rem;
+	width: fit-content;
+	text-align: left;
+}
+
+.article__pretitle {
 	font: var(--font-body-text);
 }
 
 .article__figcaption {
 	font: var(--font-small-text);
+	margin-bottom: 4rem;
 }
