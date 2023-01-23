@@ -74,7 +74,11 @@
 .header__menu-button-link {
 	color: var(--second-color);
 	font: var(--font-large-text);
-	padding: var(--padding);
+	padding: var(--padding) 0;
+}
+
+.header__content--sticky .header__menu-button-content {
+	margin: 0 1rem;
 }
 
 
