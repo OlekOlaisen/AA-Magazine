@@ -16,12 +16,21 @@
 
 .article__heading {  
 	font: var(--font-large-text);
+	margin-bottom: 4rem;
 }
 
 .article__text {
+	font: var(--font-body-text);
+	margin-bottom: 4rem;
+	width: fit-content;
+	text-align: left;
+}
+
+.article__pretitle {
 	font: var(--font-body-text);
 }
 
 .article__figcaption {
 	font: var(--font-small-text);
+	margin-bottom: 4rem;
 }
