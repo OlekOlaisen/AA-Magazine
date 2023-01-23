@@ -24,7 +24,7 @@
 .article-overview__card {
 	background-color: var(--second-color);
 	color: var(--first-color);
-	padding: 1.6rem 1.6rem 5rem 1.6rem;
+	padding: 1.6rem;
 }
 
 .article-overview__header {  
