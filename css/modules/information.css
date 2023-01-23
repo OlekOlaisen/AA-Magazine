@@ -6,6 +6,11 @@
 
 .information__heading {  
 	font: var(--font-large-text);
+	margin: 0 0 4rem 0;
+}
+
+.information__heading:nth-child(3) {  
+	font: var(--font-large-text);
 	margin: 4rem 0 4rem 0;
 }
 
