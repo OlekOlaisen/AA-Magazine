@@ -2,7 +2,7 @@
 
 .header {
 	grid-column: 1 / 13;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 } 
 
 .header__logo {
@@ -20,7 +20,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 2rem;
+	padding-top: 1rem;
 	position: sticky;
 	top: 0;
 	z-index: 1;
@@ -28,12 +28,12 @@
 
 .header__content--sticky {
   position: fixed;
-  margin: 1rem;
-  top: -1rem;
-  left: -1rem;
+  margin: 0.5rem;
+  top: -0.5rem;
+  left: -0.5rem;
   width: 100vw;
   background-color: var(--first-color);
-  padding: 2rem var(--padding) 3rem var(--padding);
+  padding: 1rem var(--padding) 1.5rem var(--padding);
 
 }
 
