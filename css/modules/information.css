@@ -6,8 +6,14 @@
 
 .information__heading {  
 	font: var(--font-large-text);
+	margin: 4rem 0 4rem 0;
 }
 
 .information__text {
 	font: var(--font-body-text);
+	margin-bottom: 1.5rem;
+}
+
+p:not(:first-child) {
+	text-indent: 5rem;
 }
