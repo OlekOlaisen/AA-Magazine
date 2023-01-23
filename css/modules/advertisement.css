@@ -1,11 +1,20 @@
 .advertisements {
+	grid-column: 1 / 13;
 	display: flex;
 	flex-direction: column;
-	grid-column: 1 / 13;
+	gap: 1rem;
+	padding: 1rem;
+	background: url('/assets/images/ad-background.png');
+	background-size: contain;
+	font: var(--font-large-text);
 }
 
 .advertisements__content {
-	/* aspect-ratio: 4/3; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	aspect-ratio: 4/3;
 	background-color: var(--third-color);
 	color: var(--first-color);
 }
