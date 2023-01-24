@@ -9,7 +9,7 @@
 	grid-column: 1 / 13;
 }
 
-.header__logo-image {
+.header__logo img {
 	width: 100%;
 }
 
@@ -66,11 +66,11 @@
 		grid-column: 1 / 4;
 	}
 
-	.header__logo:hover > .header__logo-image-hover--false {
+	.header__logo:hover > a > .header__logo-image-hover--false {
 		display: none;
 	}
 
-	.header__logo:hover > .header__logo-image-hover--true {
+	.header__logo:hover > a > .header__logo-image-hover--true {
 		display: block;
 	}
 
