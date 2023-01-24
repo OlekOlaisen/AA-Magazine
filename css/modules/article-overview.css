@@ -9,6 +9,7 @@
 .article-overview {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 
 .article-overview__image {
@@ -44,7 +45,26 @@
 	}
 
 	.article-overview__card {
-		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+
+	.article-overview__card:hover {
+		opacity: 1;
+	}
+
+	.article-overview__grid-span9 .article-overview__header, 
+	.article-overview__grid-span9 .article-overview__title {
+		width: 40%;
+	}
+
+	.article-overview__grid-span5x2 .article-overview__header,
+	.article-overview__grid-span5x2 .article-overview__title {
+		width: 80%;
 	}
 
 	.article-overview__grid-span9 {
@@ -71,4 +91,5 @@
 	.article-overview__grid-order2 {
 		order: 0;
 	}
+
 }
