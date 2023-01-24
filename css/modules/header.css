@@ -7,9 +7,6 @@
 
 .header__logo {
 	grid-column: 1 / 13;
-	grid-column-start: 1;
-	grid-column-end: 13;
-
 }
 
 .header__logo-image {
@@ -56,4 +53,28 @@
 
 .darkmode .header__content--sticky {
 	background-color: var(--second-color);
+}
+
+/* desktop */
+@media screen and (min-width: 1100px) {
+
+	.header {
+		grid-column: 1 / 4;
+	}
+
+	.header__content {
+		display: grid;
+		grid-column: 1 / 4;
+	}
+
+	.header__content--sticky {
+		display: none;
+	}
+
+	.header__text {
+		grid-column: 1 / 4;
+		font: var(--font-large-text)
+
+	}
+
 }
