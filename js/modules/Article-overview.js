@@ -6,7 +6,7 @@ export default function ArticleOverview() {
 		{
 			header: 'Anhalt University of Applied Sciences',
 			title: 'Dessau Summer School of Architecture',
-			image: '/assets/images/alan-rostovtev.jpg',
+			image: '/assets/images/alan-rostovtev-eSKy3o8P_Bw-unsplash.jpg',
 			alt: 'White wall',
 			link: '/article.html',
 			gridClass: 'article-overview__grid-span9 article-overview__grid-order1',
@@ -14,7 +14,7 @@ export default function ArticleOverview() {
 		{
 			header: 'ArkDes',
 			title: 'Joar Nango: Girjegumpi',
-			image: '/assets/images/mohammad-mohsen-rohani.jpg',
+			image: '/assets/images/mohammad-mohsen-rohani-M__1P-S3Iro-unsplash.jpg',
 			alt: 'White building',
 			link: '/article.html',
 			gridClass: 'article-overview__grid-span4',
@@ -22,7 +22,7 @@ export default function ArticleOverview() {
 		{
 			header: 'Sabu Kohso',
 			title: 'Nuclear Recursivity and Seismic Awakening',
-			image: '/assets/images/albert-stoynov.jpg',
+			image: '/assets/images/albert-stoynov-Opwvoz9zwYk-unsplash.jpg',
 			alt: 'Angled building',
 			link: '/article.html',
 			gridClass: 'article-overview__grid-span5x2 article-overview__grid-order1',
@@ -30,7 +30,7 @@ export default function ArticleOverview() {
 		{
 			header: 'Bauhaus Dessau Foundation',
 			title: 'Bauhaus Lab 2023: Concrete Antarctic',
-			image: '/assets/images/brice-cooper.jpg',
+			image: '/assets/images/brice-cooper-9ZOY7LR3Imw-unsplash.jpg',
 			alt: 'Building with bridge',
 			link: '/article.html',
 			gridClass: 'article-overview__grid-span4',
@@ -41,7 +41,7 @@ export default function ArticleOverview() {
 		{
 			header: 'Radiowaves Collective',
 			title: 'Mothering a Movement: Notes from India’s Longest Anti-Nuclear Struggle',
-			image: '/assets/images/op23.jpg',
+			image: '/assets/images/op23-Mq12w9VRe5o-unsplash.jpg',
 			alt: 'Glass building',
 			link: '/article.html',
 			gridClass: 'article-overview__grid-span9',
@@ -49,7 +49,7 @@ export default function ArticleOverview() {
 		{
 			header: 'Livia Krohn Miller',
 			title: 'Ten Thousand Years of Isolation',
-			image: '/assets/images/refargotohp.jpg',
+			image: '/assets/images/refargotohp-4gF39OLYwhk-unsplash.jpg',
 			alt: 'White building',
 			link: '/article.html',
 			gridClass: 'article-overview__grid-span5',
@@ -57,7 +57,7 @@ export default function ArticleOverview() {
 		{
 			header: 'AA editorial',
 			title: 'The Avant-Garde Museum',
-			image: '/assets/images/tingfeng-xia.jpg',
+			image: '/assets/images/tingfeng-xia-5Hxcox7APfc-unsplash.jpg',
 			alt: 'Bridge',
 			link: '/article.html',
 			gridClass: 'article-overview__grid-span4',
