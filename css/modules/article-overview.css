@@ -14,6 +14,7 @@
 
 .article-overview__image {
 	width: 100%;
+	position: relative;
 }
 
 .article-overview__image img {
@@ -45,7 +46,6 @@
 	}
 
 	.article-overview__card {
-
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -66,7 +66,6 @@
 	.article-overview__grid-span5x2 .article-overview__header,
 	.article-overview__grid-span5x2 .article-overview__title {
 		width: 80%;
-		display: none;
 	}
 
 	.article-overview__grid-span9 {
