@@ -3,6 +3,7 @@
 .header {
 	grid-column: 1 / 13;
 	margin-bottom: 1rem;
+	width: 100%;
 } 
 
 .header__logo {

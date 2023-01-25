@@ -1,4 +1,11 @@
+/* mobile first */
+
+.sidebar {
+	grid-column: 1 / 13;
+}
+
 @media screen and (min-width: 1100px) {
+	
 
 	.sidebar {
 		grid-column: 1 / 4;
