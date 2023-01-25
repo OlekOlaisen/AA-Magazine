@@ -36,13 +36,16 @@
   width: 100vw;
   background-color: var(--first-color);
   padding: 1rem var(--padding) 1.5rem var(--padding);
-
 }
 
 .header__text {
 	font: var(--font-large-text);
 	font-size: 9vw;
 	color: var(--second-color);
+}
+
+.header__text-link {
+	text-decoration: none;
 }
 
 .header__search-button {
