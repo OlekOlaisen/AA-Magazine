@@ -10,8 +10,12 @@
 	grid-column: 1 / 13;
 }
 
-.header__logo-image {
+.header__logo img {
 	width: 100%;
+}
+
+.header__logo-image-hover--true {
+	display: none;
 }
 
 .header__content {
@@ -63,6 +67,14 @@
 		grid-column: 1 / 4;
 	}
 
+	.header__logo:hover > a > .header__logo-image-hover--false {
+		display: none;
+	}
+
+	.header__logo:hover > a > .header__logo-image-hover--true {
+		display: block;
+	}
+
 	.header__content {
 		display: grid;
 		grid-column: 1 / 4;
@@ -75,7 +87,6 @@
 	.header__text {
 		grid-column: 1 / 4;
 		font: var(--font-large-text)
-
 	}
 
 }
