@@ -24,10 +24,8 @@
 
 	.advertisements {
 		grid-column: 1 / 4;
-		display: flex;
 	}
 
-	.advertisements__content {
-		display: grid;
-	}
+	/* .advertisements__content {
+	} */
 }
