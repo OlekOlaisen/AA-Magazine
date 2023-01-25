@@ -76,6 +76,7 @@
 
 	.header__logo:hover > a > .header__logo-image-hover--true {
 		display: block;
+		margin-bottom: 0.26rem;
 	}
 
 	.header__content {
