@@ -1,0 +1,31 @@
+.subscribe {
+	grid-column: 1 / 13;
+	display: grid;
+}
+
+.subscribe-button {
+	padding: 1rem;
+	background-color: var(--fourth-color);
+	font: var(--font-large-text);
+	font-size: 9vw;
+	color: var(--second-color);
+	text-align: left;
+	border-radius: 0.5rem;
+	border: none;
+	cursor: pointer;
+ }
+ 
+ .subscribe__close-button {
+	float: right;
+	color: var(--second-color);
+	font-size: var(--font-large-text);
+	cursor: pointer;
+ }
+
+/* desktop */
+@media screen and (min-width: 1100px) {
+	.subscribe {
+		display: none;
+	}
+
+}
