@@ -22,6 +22,10 @@
 	display: none;
 }
 
+.header__about-us {
+	display: none;
+}
+
 .header__content {
 	display: flex;
 	justify-content: space-between;
@@ -75,7 +79,9 @@
 	}
 
 	.header__divider {
-		display: flex;
+		display: block;
+		margin: 1rem 0;
+		border: 0.05rem solid var(--second-color);
 	}
 
 	.header__logo:hover > a > .header__logo-image-hover--false {
@@ -98,6 +104,11 @@
 	.header__text {
 		grid-column: 1 / 4;
 		font: var(--font-large-text)
+	}
+
+	.header__about-us {
+		display: block;
+		font: var(--font-body-text);
 	}
 
 }
