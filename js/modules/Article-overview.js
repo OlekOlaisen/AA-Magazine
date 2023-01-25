@@ -9,6 +9,7 @@ export default function ArticleOverview() {
 			image: '/assets/images/alan-rostovtev.jpg',
 			alt: 'White wall',
 			link: '/article.html',
+			gridClass: 'article-overview__grid-span9 article-overview__grid-order1',
 		},
 		{
 			header: 'ArkDes',
@@ -16,6 +17,7 @@ export default function ArticleOverview() {
 			image: '/assets/images/mohammad-mohsen-rohani.jpg',
 			alt: 'White building',
 			link: '/article.html',
+			gridClass: 'article-overview__grid-span4',
 		},
 		{
 			header: 'Sabu Kohso',
@@ -23,6 +25,7 @@ export default function ArticleOverview() {
 			image: '/assets/images/albert-stoynov.jpg',
 			alt: 'Angled building',
 			link: '/article.html',
+			gridClass: 'article-overview__grid-span5x2 article-overview__grid-order1',
 		},
 		{
 			header: 'Bauhaus Dessau Foundation',
@@ -30,6 +33,7 @@ export default function ArticleOverview() {
 			image: '/assets/images/brice-cooper.jpg',
 			alt: 'Building with bridge',
 			link: '/article.html',
+			gridClass: 'article-overview__grid-span4',
 		},
 	]
 
@@ -37,9 +41,10 @@ export default function ArticleOverview() {
 		{
 			header: 'Radiowaves Collective',
 			title: 'Mothering a Movement: Notes from India’s Longest Anti-Nuclear Struggle',
-			image: '/assets/images/alan-rostovtev-article.png',
+			image: '/assets/images/op23.jpg',
 			alt: 'Glass building',
 			link: '/article.html',
+			gridClass: 'article-overview__grid-span9',
 		},
 		{
 			header: 'Livia Krohn Miller',
@@ -47,6 +52,7 @@ export default function ArticleOverview() {
 			image: '/assets/images/refargotohp.jpg',
 			alt: 'White building',
 			link: '/article.html',
+			gridClass: 'article-overview__grid-span5',
 		},
 		{
 			header: 'AA editorial',
@@ -54,6 +60,7 @@ export default function ArticleOverview() {
 			image: '/assets/images/tingfeng-xia.jpg',
 			alt: 'Bridge',
 			link: '/article.html',
+			gridClass: 'article-overview__grid-span4',
 		},
 	]
 
@@ -67,7 +74,7 @@ export default function ArticleOverview() {
 
 	function renderArticles() {
 		for (const oneArticle of articles1) {
-			const article = createArticle(oneArticle.link);
+			const article = createArticle(oneArticle.link, oneArticle.gridClass);
 			const image = createImage(oneArticle.image, oneArticle.alt); 
 			article.append(image);
 			const card = createCard(oneArticle.header, oneArticle.title);
@@ -76,7 +83,7 @@ export default function ArticleOverview() {
 		}
 
 		for (const oneArticle of articles2) {
-			const article = createArticle(oneArticle.link);
+			const article = createArticle(oneArticle.link, oneArticle.gridClass);
 			const image = createImage(oneArticle.image, oneArticle.alt); 
 			article.append(image);
 			const card = createCard(oneArticle.header, oneArticle.title);
@@ -84,9 +91,9 @@ export default function ArticleOverview() {
 			articlesOverview2Container.append(article);
 		}
 
-		function createArticle(link) {
+		function createArticle(link, gridClass) {
 			const article = document.createElement('a');
-			article.className = 'article-overview';
+			article.className = `article-overview ${gridClass}`;
 			article.href = link;
 
 			return article;
