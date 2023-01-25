@@ -6,6 +6,10 @@
 	width: 100%;
 } 
 
+.header__divider {
+	display: none;
+}
+
 .header__logo {
 	grid-column: 1 / 13;
 }
@@ -68,6 +72,10 @@
 
 	.header {
 		grid-column: 1 / 4;
+	}
+
+	.header__divider {
+		display: flex;
 	}
 
 	.header__logo:hover > a > .header__logo-image-hover--false {
