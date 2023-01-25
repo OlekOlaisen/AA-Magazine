@@ -6,10 +6,6 @@
 	width: 100%;
 } 
 
-.header__divider {
-	display: none;
-}
-
 .header__logo {
 	grid-column: 1 / 13;
 }
@@ -78,16 +74,6 @@
 		grid-column: 1 / 4;
 	}
 
-	.header__divider {
-		display: block;
-		margin: 1rem 0;
-		border: 0.05rem solid var(--second-color);
-	}
-
-	.darkmode .header__divider {
-		border: 0.05rem solid var(--first-color);
-	}
-
 	.header__logo:hover > a > .header__logo-image-hover--false {
 		display: none;
 	}
@@ -113,6 +99,15 @@
 	.header__about-us {
 		display: block;
 		font: var(--font-body-text);
+		border-top: 1px solid var(--second-color);
+		border-bottom: 1px solid var(--second-color);
+		margin: 1rem 0;
+		padding: 1rem 0;
+	}
+
+	.darkmode .header__about-us {
+		border-top: 1px solid var(--first-color);
+		border-bottom: 1px solid var(--first-color);
 	}
 
 }
