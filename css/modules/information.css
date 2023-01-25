@@ -19,6 +19,6 @@
 	margin-bottom: 1.5rem;
 }
 
-p:not(:first-child) {
+.information p:not(:first-child) {
 	text-indent: 5rem;
 }
