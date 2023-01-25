@@ -18,3 +18,16 @@
 	background-color: var(--third-color);
 	color: var(--first-color);
 }
+
+/* desktop */
+@media screen and (min-width: 1100px) {
+
+	.advertisements {
+		grid-column: 1 / 4;
+		display: flex;
+	}
+
+	.advertisements__content {
+		display: grid;
+	}
+}
