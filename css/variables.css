@@ -15,7 +15,7 @@
 	--padding: 0.5rem;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 768px) {
 	:root {
 		--first-color: #ffffff;
 		--second-color: #000000;

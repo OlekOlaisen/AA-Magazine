@@ -37,7 +37,7 @@
 	font: var(--font-large-text);
 }
 
-@media only screen and  (min-width: 1100px) {
+@media only screen and  (min-width: 768px) {
 	.article-overview__1-container,
 	.article-overview__2-container {
 		grid-column: 4 / 13;

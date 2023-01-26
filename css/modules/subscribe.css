@@ -28,7 +28,7 @@
  }
 
 /* desktop */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 768px) {
 	.subscribe {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
