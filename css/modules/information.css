@@ -26,7 +26,7 @@
    margin-bottom: 2rem;
 }
 
-p:not(:first-child) {
+.information__text p:not(:first-child) {
    text-indent: 2.5rem;
 }
 
@@ -62,7 +62,7 @@ p:not(:first-child) {
 		grid-column: 2 / 6;
    }
    
-   p:not(:first-child) {
+   .information__text p:not(:first-child) {
       text-indent: 2.5rem;
    } 
 }
