@@ -8,13 +8,18 @@
 
 .header__logo {
 	grid-column: 1 / 13;
+	position: relative;
 }
 
 .header__logo img {
 	width: 100%;
 }
 
-.header__logo-image-hover--true {
+.header__logo-image--purple-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	display: none;
 }
 
@@ -74,13 +79,8 @@
 		grid-column: 1 / 4;
 	}
 
-	.header__logo:hover > a > .header__logo-image-hover--false {
-		display: none;
-	}
-
-	.header__logo:hover > a > .header__logo-image-hover--true {
+	.header__logo:hover > a > .header__logo-image--purple-icon {
 		display: block;
-		margin-bottom: 0.26rem;
 	}
 
 	.header__content {
