@@ -1,0 +1,31 @@
+.sidebar__events {
+	display: none;
+}
+
+/* desktop */
+@media screen and (min-width: 1100px) {
+	.sidebar__events {
+		display: block;
+		margin: 1rem 0;
+		padding: 1rem 0;
+		border-top: 1px solid var(--second-color);
+	}
+
+	.sidebar__events-button {
+		border: 1px solid var(--second-color);
+		padding: 0 0.5rem;
+		margin: 0 0.1rem;
+		background-color: transparent;
+		border-radius: 10px;
+	}
+
+	.sidebar__events-button:hover {
+		background-color: var(--second-color);
+		color: var(--first-color);
+	}
+
+	.sidebar__events-title{
+		font: var(--font-body-text-uppercase);
+	}
+
+}
