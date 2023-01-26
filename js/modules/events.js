@@ -27,85 +27,81 @@ export default function Events() {
 		}
 	]; 
 
-
-
-	// repeats the events array three times
-	
-
-	// Repeats the events array three times
-
+	// Repeats the events array
 	let repeatedEvents = events;
 
-		for (let i = 0; i < 2; i++) {
+		for (let event = 0; event < 2; event++) {
 			repeatedEvents = repeatedEvents.concat(events);
 		};
 
-		let sidebar = document.querySelector('.sidebar__events');
+	let sidebar = document.querySelector('.sidebar__events');
 
-    //creates the button container
+    //Creates the container for the buttons
     let buttonContainer = document.createElement('div');
     buttonContainer.className = "sidebar__events-buttons"
     sidebar.appendChild(buttonContainer);
 
-    //create the 3 buttons
+    //Creates the event filter buttons
     let lecturesButton = document.createElement('button');
     lecturesButton.innerText = "Lectures";
     lecturesButton.className = "sidebar__events-button";
     lecturesButton.addEventListener('click', () => {
         toggleFilter("Lectures");
     });
-    buttonContainer.appendChild(lecturesButton);
-
+    
     let exhibitionsButton = document.createElement('button');
     exhibitionsButton.innerText = "Exhibitions";
     exhibitionsButton.className = "sidebar__events-button";
     exhibitionsButton.addEventListener('click', () => {
         toggleFilter("Exhibitions");
     });
-    buttonContainer.appendChild(exhibitionsButton);
-
+    
     let openSeminarsButton = document.createElement('button');
     openSeminarsButton.innerText = "Open Seminars";
     openSeminarsButton.className = "sidebar__events-button";
     openSeminarsButton.addEventListener('click', () => {
         toggleFilter("Open Seminars");
     });
+
+    buttonContainer.appendChild(lecturesButton);
+    buttonContainer.appendChild(exhibitionsButton);
     buttonContainer.appendChild(openSeminarsButton);
     
-    //define the toggleFilter function
+    //Defines the toggleFilter function
     function toggleFilter(category) {
         let filteredEvents = repeatedEvents.filter(event => event.category === category);
-        if (filteredEvents.length === eventsToDisplay.length && eventsToDisplay.every((v,i)=> v === filteredEvents[i])) {
+        if (filteredEvents.length === eventsToDisplay.length && eventsToDisplay.every((x,y)=> x === filteredEvents[y])) {
             //if all events are already displayed
-            displayEvents(repeatedEvents);
+            renderEvents(repeatedEvents);
             eventsToDisplay = repeatedEvents;
         } else {
             //if the events are filtered
-            displayEvents(filteredEvents);
+            renderEvents(filteredEvents);
             eventsToDisplay = filteredEvents;
         }
-    }
+    };
 
-    //display the events
+    //Displays the events in HTML
     let eventsToDisplay = repeatedEvents;
-    function displayEvents(eventsToDisplay) {
+    function renderEvents(eventsToDisplay) {
         sidebar.innerHTML = "";
         sidebar.appendChild(buttonContainer);
         for (let event of eventsToDisplay) {
             let eventDiv = document.createElement('div');
             eventDiv.className = "sidebar__events-event"
             eventDiv.innerHTML = `
-                <h2 class="sidebar__events-event-title">${event.title}</h2>
                 <p class="sidebar__events-event-category">${event.category}</p>
                 <p class="sidebar__events-event-date">${event.date}</p>
                 <p class="sidebar__events-event-time">${event.time}</p>
+                <h2 class="sidebar__events-event-title">${event.title}</h2>
+                
             `;
             sidebar.appendChild(eventDiv);
         }
-    }
+    };
 
-    //display all events by default
-    displayEvents(repeatedEvents);
+    //Displays all events by default
+    renderEvents(repeatedEvents);
 
 }
 
