@@ -70,7 +70,7 @@ export default function Events() {
     //Defines the toggleFilter function
     function toggleFilter(category) {
         let filteredEvents = repeatedEvents.filter(event => event.category === category);
-        if (filteredEvents.length === eventsToDisplay.length && eventsToDisplay.every((x,y)=> x === filteredEvents[y])) {
+        if (filteredEvents.length === eventsToDisplay.length && eventsToDisplay.every((events,index)=> events === filteredEvents[index])) {
             //if all events are already displayed
             renderEvents(repeatedEvents);
             eventsToDisplay = repeatedEvents;
