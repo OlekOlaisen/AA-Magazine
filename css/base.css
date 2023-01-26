@@ -35,7 +35,7 @@ html {
 
 	.right-container {
 		grid-column: 4 / 13;
-		height: 100dvh;
+		height: 100vh;
 		overflow-y: scroll;
 		padding: 0.5rem 0;
 	}
