@@ -34,7 +34,7 @@
 	transform: translateY(0.6rem);
 }
 
-/* animation */
+/* change hamburger-menu to a X when clicking */
 .header__menu-button--visible .header__menu-button-burger {
 	transform: translateX(2.5rem);
 	background: transparent;
