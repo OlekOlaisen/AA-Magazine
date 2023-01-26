@@ -91,8 +91,10 @@ export default function Events() {
             eventDiv.className = "sidebar__events-event"
             eventDiv.innerHTML = `
                 <p class="sidebar__events-event-category">${event.category}</p>
-                <p class="sidebar__events-event-date">${event.date}</p>
-                <p class="sidebar__events-event-time">${event.time}</p>
+                <div class="sidebar__events-date-time">
+                    <p class="sidebar__events-event-date">${event.date}</p>
+                    <p class="sidebar__events-event-time">${event.time}</p>
+                </div>
                 <h2 class="sidebar__events-event-title">${event.title}</h2>
                 
             `;
