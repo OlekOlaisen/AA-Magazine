@@ -104,4 +104,8 @@
 	.header__menu-button-link {
 		font: var(--font-large-text-link);
 	}
+
+	.darkmode .header__menu-button-link {
+		color: var(--first-color);
+	}
 }

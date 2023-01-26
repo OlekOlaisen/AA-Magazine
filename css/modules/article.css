@@ -51,19 +51,21 @@
 	.main__article {
 		display: grid;
 		grid-template-columns: repeat(9, 1fr);
+		margin-top: 2rem;
 	}
 
 	.main__article__pretitle {
 		grid-column: 2 / 5;
 		font: var(--font-body-text);
-		font-weight: 400;
 	}
 
 	.main__article-heading {  
 		display: grid;
 		grid-column: 2 / 9;
 		font: var(--font-large-text);
-		margin-bottom: 4rem;
+		line-height: normal;
+		margin-bottom: 2rem;
+		letter-spacing: 0.07rem;
 	}
 
 	.main__article-firstimage {
@@ -72,17 +74,17 @@
 		margin-bottom: 1rem;
 	}
 	
-	.main__article-figcaption {
-		grid-column: 2 / 6;
+	.main__article-firstfigcaption {
+		grid-column: 2 / 8;
 		font: var(--font-small-text);
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
 	}
 	
 	.main__article-text {
 		grid-column: 2 / 6;
 		font: var(--font-body-text);
-		margin-bottom: 4rem;
-		text-align: left;
+		margin-bottom: 2rem;
+		font-weight: 100;
 	}
 	
 	.main__article-secondimage {
@@ -94,7 +96,7 @@
 	.main__article-secondfigcaption {
 		grid-column: 2 / 6;
 		font: var(--font-small-text);
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
 	}
 
 }

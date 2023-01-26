@@ -18,6 +18,10 @@
 	display: none;
 }
 
+.header__about-us {
+	display: none;
+}
+
 .header__content {
 	display: flex;
 	justify-content: space-between;
@@ -76,6 +80,7 @@
 
 	.header__logo:hover > a > .header__logo-image-hover--true {
 		display: block;
+		margin-bottom: 0.26rem;
 	}
 
 	.header__content {
@@ -90,6 +95,20 @@
 	.header__text {
 		grid-column: 1 / 4;
 		font: var(--font-large-text)
+	}
+
+	.header__about-us {
+		display: block;
+		font: var(--font-body-text);
+		border-top: 1px solid var(--second-color);
+		border-bottom: 1px solid var(--second-color);
+		margin: 1rem 0;
+		padding: 1rem 0;
+	}
+
+	.darkmode .header__about-us {
+		border-top: 1px solid var(--first-color);
+		border-bottom: 1px solid var(--first-color);
 	}
 
 }

@@ -28,8 +28,12 @@ export default function Events() {
 	]; 
 
 
+
 	// repeats the events array three times
 	
+
+	// Repeats the events array three times
+
 	let repeatedEvents = events;
 
 		for (let i = 0; i < 2; i++) {
@@ -103,8 +107,5 @@ export default function Events() {
     //display all events by default
     displayEvents(repeatedEvents);
 
-
-	 
 }
 
-		
