@@ -78,7 +78,7 @@ export default function ArticleOverview() {
 			const image = createImage(oneArticle.image, oneArticle.alt); 
 			article.append(image);
 			const card = createCard(oneArticle.header, oneArticle.title);
-			article.append(card);
+			image.append(card);
 			articlesOverview1Container.append(article);
 		}
 
@@ -87,7 +87,7 @@ export default function ArticleOverview() {
 			const image = createImage(oneArticle.image, oneArticle.alt); 
 			article.append(image);
 			const card = createCard(oneArticle.header, oneArticle.title);
-			article.append(card);
+			image.append(card);
 			articlesOverview2Container.append(article);
 		}
 
