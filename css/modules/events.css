@@ -9,7 +9,9 @@
 /* desktop */
 @media screen and (min-width: 1100px) {
 	.sidebar__events {
-		display: block;
+		display: flex;
+		flex-flow: column;
+		gap: 1rem;
 	}
 
 	.sidebar__events-container {
@@ -19,10 +21,12 @@
 	.sidebar__events-headline {
 		display: block;
 		margin-top: 1rem;
+		font: var(--font-body-text);
+		text-transform: uppercase;
 	}
 
 	.sidebar__events-buttons {
-		margin: 0.5rem 0 1rem 0;
+		
 	}
 
 	.sidebar__events-button {
@@ -31,7 +35,8 @@
 		margin: 0 0.1rem;
 		background-color: transparent;
 		border-radius: 50px;
-		font: var(--font-body-text-uppercase);
+		font: var(--font-small-text-uppercase);
+		text-transform: uppercase;
 	}
 
 	.sidebar__events-button:hover {
@@ -39,14 +44,25 @@
 		color: var(--first-color);
 	}
 
-	.sidebar__events-title{
-		font: var(--font-body-text-uppercase);
+	.sidebar__events-date-time {
+		display: flex;
+		flex-flow: row;
 	}
 
 	.sidebar__events-event-category {
-		font: var(--font-small-text-uppercase)
+		font: var(--font-small-text-uppercase);
+		text-transform: uppercase;
 	}
-	.sidebar__events-event-date {}
-	.sidebar__events-event-time {}
-	.sidebar__events-event-title {}
+	.sidebar__events-event-date {
+		font: var(--font-small-text-uppercase);
+		text-transform: uppercase;
+	}
+	.sidebar__events-event-time {
+		font: var(--font-small-text-uppercase);
+		text-transform: uppercase;
+		margin-left: 0.2rem;
+	}
+	.sidebar__events-event-title {
+		font: var(--font-body-text);
+	}
 }

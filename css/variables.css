@@ -5,11 +5,10 @@
 	--fourth-color: #e7e7e7;
 
 	--font-body-text: 1rem 'Times New Roman';
-	--font-body-text-uppercase: 1rem Uppercase 'Times New Roman';
 	--font-large-text: 2rem/2.4rem 'neue-haas-grotesk-text', sans-serif;
 	--font-large-text-link: 2rem/2.3rem 'Times New Roman';
 	--font-small-text: 0.5rem 'Times New Roman';
-	--font-small-text-uppercase: 0.5rem/0.6rem Uppercase 'Times New Roman';
+	--font-small-text-uppercase: 0.5rem/0.6rem 'Times New Roman';
 
 	--letter-spacing-uppercase: 0.05rem;
 
@@ -25,11 +24,10 @@
 		--background-color-dark: #171717;
 	
 		--font-body-text: 1rem 'Times New Roman';
-		--font-body-text-uppercase: 1rem Uppercase 'Times New Roman';
 		--font-large-text: 1.8rem/2.4rem 'neue-haas-grotesk-text', sans-serif;
 		--font-large-text-link: 2rem/2.3rem 'Times New Roman';
 		--font-small-text: 0.5rem 'Times New Roman';
-		--font-small-text-uppercase: 0.5rem/0.6rem Uppercase 'Times New Roman';
+		--font-small-text-uppercase: 0.5rem/0.6rem 'Times New Roman';
 	
 		--letter-spacing-uppercase: 0.05rem;
 	
