@@ -1,3 +1,4 @@
+
 .header__menu-button {
 	position: relative;
 	display: flex;
@@ -34,7 +35,7 @@
 	transform: translateY(0.6rem);
 }
 
-/* animation */
+/* translate the burger-menu to an X */
 .header__menu-button--visible .header__menu-button-burger {
 	transform: translateX(2.5rem);
 	background: transparent;
@@ -49,17 +50,8 @@
 	transform: rotate(-45deg) translate(-35px, -35px);
 }
 
-/* dark mode */
-.darkmode .header__menu-button div::before,
-.darkmode .header__menu-button div::after,
-.darkmode .header__menu-button div {
-	background-color: var(--first-color);
-}
 
-.darkmode .header__menu-button--visible .header__menu-button-burger {
-	background-color: transparent;
-}
-
+/* navigation */
 .header__menu-button-content {
 	display: none;
 }
@@ -68,11 +60,6 @@
 	padding: 0 0.5rem;
 }
 
-.header__menu-button-link {
-	color: var(--second-color);
-	font: var(--font-large-text);
-	text-decoration: none;
-}
 
 .header__menu-button-content--visible {
 	display: flex;
@@ -82,6 +69,24 @@
 	position: absolute;
 	top: 3.4rem;
 	left: 0;
+}
+
+.header__menu-button-link {
+	color: var(--second-color);
+	font: var(--font-large-text);
+	text-decoration: none;
+}
+
+
+/* change colors to "darkmode" on article page */
+.darkmode .header__menu-button div::before,
+.darkmode .header__menu-button div::after,
+.darkmode .header__menu-button div {
+	background-color: var(--first-color);
+}
+
+.darkmode .header__menu-button--visible .header__menu-button-burger {
+	background-color: transparent;
 }
 
 .darkmode .header__menu-button-content--visible .header__menu-button-link {
@@ -96,6 +101,8 @@
 		display: none;
 	}
 
+	
+	/* navigation */
 	.header__menu-button-content {
 		display: flex;
 		flex-flow: column;
@@ -105,6 +112,8 @@
 		font: var(--font-large-text-link);
 	}
 
+
+	/* change colors on article dark page */
 	.darkmode .header__menu-button-link {
 		color: var(--first-color);
 	}

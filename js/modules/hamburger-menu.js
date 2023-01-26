@@ -6,7 +6,7 @@ export default function Hamburger() {
 
 	let dropdownListVisible = false; 
 
-	// create a reference to the Block (BEM) element
+	// make a reference to the Block (BEM) element
 	const menuButton = document.querySelector('.header__menu-button');
 	const contentContainer = document.querySelector('.header__menu-button-content');
 	
@@ -22,10 +22,6 @@ export default function Hamburger() {
 
 	
 	// split the "handler-function" into separate functions
-	//		you should see at first sight what "clicking the menuButton" does in the code
-	//		regardless of the way it's implemented. this is "declarative code".
-	//		this means to split the code into more specific functions.
-	//		"functions should do one thing and one thing only", clean code
 	function handleMenuButtonClick() {
 		toggleMenuVisibility();
 		renderButton();
@@ -38,8 +34,6 @@ export default function Hamburger() {
 
 	// "methods"
 	// the purpose of these methods is to mutate model variables,
-	// and nothing else. these methods should not be bothered with how the
-	// model is presented to the user, but only what the functionality is
 	function toggleMenuVisibility() {
 		menuVisible = !menuVisible;
 	}
@@ -50,9 +44,7 @@ export default function Hamburger() {
 
 	// "render"
 	// this function renders (updates) the needed HTML DOM elements based
-	// on the values of the model. this has to be called after the model
-	// has been updated and should preferrably be called once per update,
-	// and only from the handler function
+	// on the values of the model.
 	function renderButton() {
 		if(menuVisible) {
 			menuButton.classList.add('header__menu-button--visible');
@@ -68,5 +60,4 @@ export default function Hamburger() {
 			contentContainer.classList.remove('header__menu-button-content--visible')
 		}
 	}
-
 }
