@@ -18,15 +18,15 @@
 		border-top: 1px solid var(--second-color);
 	}
 
+	.sidebar__events-container--darkmode {
+		border-top: 1px solid var(--first-color);
+	}
+
 	.sidebar__events-headline {
 		display: block;
 		margin-top: 1rem;
 		font: var(--font-body-text);
 		text-transform: uppercase;
-	}
-
-	.sidebar__events-buttons {
-		
 	}
 
 	.sidebar__events-button {
@@ -43,6 +43,11 @@
 		background-color: var(--second-color);
 		color: var(--first-color);
 	}
+
+		.sidebar__events-container--darkmode  .sidebar__events-button {
+			color: var(--first-color);
+			border: 1px solid var(--first-color);
+		}
 
 	.sidebar__events-date-time {
 		display: flex;
