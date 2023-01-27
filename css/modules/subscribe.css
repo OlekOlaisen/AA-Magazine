@@ -23,7 +23,7 @@
  .subscribe__close-button {
 	float: right;
 	cursor: pointer;
-	background-image: url('/assets/vectors/close-button.svg');
+	background-image: url('/assets/vectors/close-button-mobile.svg');
 	background-size: contain;
 	background-position: center;
 	width: 10vw;
@@ -44,6 +44,7 @@
 	}
 	.subscribe__close-button {
 		width: 5vw;
+		background-image: url('/assets/vectors/close-button.svg');
 	}
 	.subscribe__button:hover {
 		background-color: var(--second-color);
