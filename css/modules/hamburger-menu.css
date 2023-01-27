@@ -62,6 +62,7 @@
 
 .header__menu-button-content {
 	display: none;
+	padding: 0.5rem 0;
 }
 
 .header__content--sticky .header__menu-button-content {
@@ -72,6 +73,11 @@
 	color: var(--second-color);
 	font: var(--font-large-text);
 	text-decoration: none;
+}
+
+.header__menu-button-link:hover {
+	text-decoration: underline;
+	text-decoration-color: inherit;
 }
 
 .header__menu-button-content--visible {
@@ -88,6 +94,10 @@
 .darkmode .header__menu-button-content--visible .header__menu-button-link {
 	background-color: var(--second-color);
 	color: var(--first-color);
+}
+
+.darkmode .header__menu-button-content {
+	background-color: var(--second-color);
 }
 
 
@@ -112,5 +122,9 @@
 
 	.darkmode .header__menu-button-link {
 		color: var(--first-color);
+	}
+
+	.darkmode .header__menu-button-content {
+		background-color: var(--background-color-dark);
 	}
 }
