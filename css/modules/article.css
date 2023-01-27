@@ -54,7 +54,7 @@
 		grid-column: 1 / 4;
 	}
 
-	.main {
+	.right-container {
 		display: grid;
 		grid-column: 4 / 13;
 		height: 100vh;
