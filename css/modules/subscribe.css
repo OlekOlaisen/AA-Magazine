@@ -38,4 +38,9 @@
 		font-size: 3vw;
 		grid-column: 4 / 13;
 	}
+
+	.subscribe__button:hover {
+		background-color: var(--second-color);
+		color: var(--first-color);
+	}
 }
