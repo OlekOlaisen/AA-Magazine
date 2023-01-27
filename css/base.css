@@ -1,5 +1,11 @@
 html {
-	font-size: 20px;
+	font-size: 4.5vw;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .layout {
@@ -23,7 +29,18 @@ html {
 	color: inherit;
 	text-decoration-color: var(--third-color)
 }
+
+@media screen and (min-width: 420px) {
+	html {
+		font-size: 20px;
+	}
+}
+
 @media screen and (min-width: 768px) {
+	html {
+		font-size: 1.4vw;
+	}
+
 	.layout {
 		margin-top: 0rem;
 		margin-bottom: 0;
@@ -42,4 +59,8 @@ html {
 	}
 }
 
-/* Breakpoint desktop - 1100px*/
+@media screen and (min-width: 1400px) {
+	html {
+		font-size: 20px;
+	}
+}

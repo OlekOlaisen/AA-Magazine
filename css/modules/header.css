@@ -49,7 +49,7 @@
 
 .header__text {
 	font: var(--font-large-text);
-	font-size: 9vw;
+	/* font-size: 9vw; */
 	color: var(--second-color);
 }
 
@@ -84,8 +84,9 @@
 	}
 
 	.header__content {
-		display: grid;
-		grid-column: 1 / 4;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
 	.header__content--sticky {
