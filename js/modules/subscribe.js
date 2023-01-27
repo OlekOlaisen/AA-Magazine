@@ -4,7 +4,7 @@ export default function Subscribe() {
 	const subscribeButton = document.querySelector('.subscribe__button')
 	
 	if (window.innerWidth > 1100) {
-		subscribeButton.innerHTML = 'Subscribe for architecture, art, and more <span class="subscribe__close-button">X</span>';
+		subscribeButton.innerHTML = 'Subscribe for architecture, art, and more <span class="subscribe__close-button"></span>';
   	}
 
 	const closeButton = document.querySelector('.subscribe__close-button');
