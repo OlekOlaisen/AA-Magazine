@@ -12,7 +12,7 @@
 .information__image {
 	display: flex;
 	flex-direction: column;
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
 
