@@ -1,5 +1,11 @@
 html {
-	font-size: 20px;
+	font-size: 4.5vw;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .layout {
@@ -7,6 +13,7 @@ html {
 	grid-template-columns: repeat(12, 1fr);
   	gap: 0.5rem;
 	margin: 0.5rem;
+	max-width: 85rem;
 }
 
 .right-container {
@@ -22,17 +29,23 @@ html {
 	color: inherit;
 	text-decoration-color: var(--third-color)
 }
+
+@media screen and (min-width: 420px) {
+	html {
+		font-size: 20px;
+	}
+}
+
 @media screen and (min-width: 768px) {
+	html {
+		font-size: 1.4vw;
+	}
+
 	.layout {
 		margin-top: 0rem;
 		margin-bottom: 0;
 	}
 	
-	.darkmode {
-		color: var(--first-color);
-		background-color: var(--background-color-dark);
-	}
-
 	.right-container {
 		grid-column: 4 / 13;
 		height: 100vh;
@@ -41,4 +54,8 @@ html {
 	}
 }
 
-/* Breakpoint desktop - 1100px*/
+@media screen and (min-width: 1400px) {
+	html {
+		font-size: 20px;
+	}
+}
