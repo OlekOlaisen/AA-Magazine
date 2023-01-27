@@ -1,4 +1,5 @@
 .subscribe {
+	grid-column: 1 / 13;
 	width: 96.7%;
 	position: fixed;
 	bottom: 1rem;
@@ -8,10 +9,7 @@
 
 .subscribe__button {
 	width: 100%;
-	padding-top: 0.6rem;
-	padding-bottom: 0.3rem;
-	padding-left: 1rem;
-	padding-right: 0.7rem;
+	padding: 0.6rem 0.7rem 0.3rem 1rem;
 	background-color: var(--fourth-color);
 	font: var(--font-large-text);
 	font-size: 8vw;
@@ -46,7 +44,7 @@
 		grid-column: 4 / 13;
 	}
 	.subscribe__close-button {
-		width: 2.5vw;
+		width: 2vw;
 		background-image: url('/assets/vectors/close-button.svg');
 	}
 	.subscribe__button:hover {
