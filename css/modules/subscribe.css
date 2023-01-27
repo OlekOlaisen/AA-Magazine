@@ -25,6 +25,12 @@
 	color: var(--second-color);
 	font-size: var(--font-large-text);
 	cursor: pointer;
+	background-image: url('/assets/vectors/close-button.svg');
+	background-size: contain;
+	background-position: center;
+	width: 5vw;
+	height: 5vh;
+	background-repeat: no-repeat;
  }
 
 /* desktop */
