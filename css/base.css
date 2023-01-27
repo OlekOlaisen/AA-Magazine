@@ -46,11 +46,6 @@ body {
 		margin-bottom: 0;
 	}
 	
-	.darkmode {
-		color: var(--first-color);
-		background-color: var(--background-color-dark);
-	}
-
 	.right-container {
 		grid-column: 4 / 13;
 		height: 100vh;
