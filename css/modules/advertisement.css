@@ -7,6 +7,7 @@
 	background: url('/assets/images/ad-background.png');
 	background-size: contain;
 	font: var(--font-large-text);
+	margin: 0.5rem 0;
 }
 
 .advertisements__content {
