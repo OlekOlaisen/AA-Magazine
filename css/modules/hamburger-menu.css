@@ -82,6 +82,7 @@
 	position: absolute;
 	top: 3.4rem;
 	left: 0;
+	padding: 0.5rem 0;
 }
 
 .darkmode .header__menu-button-content--visible .header__menu-button-link {
@@ -92,6 +93,10 @@
 
 /* desktop */
 @media screen and (min-width: 768px) {
+	.header__menu-button-content--visible {
+		padding: unset;
+	}
+
 	.header__menu-button {
 		display: none;
 	}
