@@ -22,8 +22,6 @@
  
  .subscribe__close-button {
 	float: right;
-	color: var(--second-color);
-	font-size: var(--font-large-text);
 	cursor: pointer;
 	background-image: url('/assets/vectors/close-button.svg');
 	background-size: contain;
@@ -48,5 +46,8 @@
 	.subscribe__button:hover {
 		background-color: var(--second-color);
 		color: var(--first-color);
+	}
+	.subscribe__button:hover .subscribe__close-button {
+		filter: brightness(0) invert(1);
 	}
 }
