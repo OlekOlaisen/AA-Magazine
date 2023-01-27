@@ -24,12 +24,12 @@
 
 .main__article-heading {
 	font: var(--font-large-text);
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 
 .main__article-text {
 	font: var(--font-body-text);
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 	width: fit-content;
 	text-align: left;
 }
@@ -38,9 +38,14 @@
 	font: var(--font-body-text);
 }
 
-.main__article-figcaption {
+.main__article-firstfigcaption {
 	font: var(--font-small-text);
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
+}
+
+.main__article-secondfigcaption {
+	font: var(--font-small-text);
+	margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 768px) {
