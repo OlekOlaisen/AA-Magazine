@@ -1,18 +1,18 @@
 .subscribe {
-	width: 100%;
+	grid-column: 1 / 13;
+	width: 96.7%;
 	position: fixed;
-	bottom: 0;
-	padding: 1rem;
-	right: 0.0rem;
+	bottom: 1rem;
 	z-index: 100;
+	right: 1.7%;
 }
 
 .subscribe__button {
 	width: 100%;
-	padding: 1rem;
+	padding: 0.6rem 0.7rem 0.3rem 1rem;
 	background-color: var(--fourth-color);
 	font: var(--font-large-text);
-	font-size: 9vw;
+	font-size: 8vw;
 	color: var(--second-color);
 	text-align: left;
 	border-radius: 0.5rem;
@@ -22,9 +22,14 @@
  
  .subscribe__close-button {
 	float: right;
-	color: var(--second-color);
-	font-size: var(--font-large-text);
 	cursor: pointer;
+	background-image: url('/assets/vectors/close-button-mobile.svg');
+	background-size: contain;
+	background-position: center;
+	width: 6vw;
+	height: 5vh;
+	background-repeat: no-repeat;
+	margin-right: 0.5rem;
  }
 
 /* desktop */
@@ -35,7 +40,18 @@
 		grid-column: 4 / 13;
 	}
 	.subscribe__button {
-		font-size: 3vw;
+		font-size: 2.8vw;
 		grid-column: 4 / 13;
+	}
+	.subscribe__close-button {
+		width: 2vw;
+		background-image: url('/assets/vectors/close-button.svg');
+	}
+	.subscribe__button:hover {
+		background-color: var(--second-color);
+		color: var(--first-color);
+	}
+	.subscribe__button:hover .subscribe__close-button {
+		filter: brightness(0) invert(1);
 	}
 }
