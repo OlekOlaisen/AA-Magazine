@@ -24,7 +24,7 @@
 
 .main__article-heading {
 	font: var(--font-large-text);
-	margin-bottom: rem;
+	margin-bottom: 2rem;
 }
 
 .main__article-text {
@@ -54,7 +54,7 @@
 		grid-column: 1 / 4;
 	}
 
-	.main {
+	.right-container {
 		display: grid;
 		grid-column: 4 / 13;
 		height: 100vh;
