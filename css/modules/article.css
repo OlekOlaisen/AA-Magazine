@@ -24,7 +24,7 @@
 
 .main__article-heading {
 	font: var(--font-large-text);
-	margin-bottom: 2rem;
+	margin-bottom: rem;
 }
 
 .main__article-text {
@@ -57,6 +57,8 @@
 	.main {
 		display: grid;
 		grid-column: 4 / 13;
+		height: 100vh;
+		overflow-y: scroll;
 	}
 
 	.main__article {
