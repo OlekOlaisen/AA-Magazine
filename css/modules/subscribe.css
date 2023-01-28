@@ -1,13 +1,19 @@
+.layout {
+	position: relative;
+}
+
 .subscribe {
-	grid-column: 1 / 13;
-	width: 96.7%;
-	position: fixed;
-	bottom: 1rem;
+	left: 1.3%;
+	right: 0;
+	position: absolute;
+	width: 98%;
+	height: 4rem;
+	bottom: 2rem;
 	z-index: 100;
-	right: 1.7%;
 }
 
 .subscribe__button {
+	position: absolute;
 	width: 100%;
 	padding: 0.6rem 0.7rem 0.3rem 1rem;
 	background-color: var(--fourth-color);
@@ -37,14 +43,13 @@
 	.subscribe {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-column: 4 / 13;
 	}
 	.subscribe__button {
-		font-size: 2.8vw;
+		font-size: 2rem;
 		grid-column: 4 / 13;
 	}
 	.subscribe__close-button {
-		width: 2vw;
+		width: 2rem;
 		background-image: url('/assets/vectors/close-button.svg');
 	}
 	.subscribe__button:hover {
@@ -53,5 +58,26 @@
 	}
 	.subscribe__button:hover .subscribe__close-button {
 		filter: brightness(0) invert(1);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.subscribe {
+		position: fixed;
+		width: 97.5%;
+		height: 4rem;
+		bottom: 1rem;
+		z-index: 100;
+	}
+
+	.subscribe__button {
+		width: 100%;
+		height: 4rem;
+		padding: 0.6rem 0.7rem 0.3rem 1rem;
+		font-size: 7vw;
+	}
+
+	.subscribe__close-button {
+		margin-right: 3%;
 	}
 }
