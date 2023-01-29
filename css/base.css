@@ -50,6 +50,12 @@ body {
 		color: var(--first-color);
 		background-color: var(--background-color-dark);
 	}
+
+	
+
+	.sidebar__events-container--darkmode {
+		border-top: 1px solid var(--first-color);
+	}
 	
 	.right-container {
 		grid-column: 4 / 13;
