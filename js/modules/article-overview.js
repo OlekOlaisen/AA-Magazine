@@ -76,8 +76,9 @@ export default function ArticleOverview() {
 		for (const oneArticle of articles1) {
 			const article = createArticle(oneArticle.link, oneArticle.gridClass);
 			const image = createImage(oneArticle.image, oneArticle.alt); 
-			article.append(image);
 			const card = createCard(oneArticle.header, oneArticle.title);
+
+			article.append(image);
 			image.append(card);
 			articlesOverview1Container.append(article);
 		}
@@ -85,8 +86,9 @@ export default function ArticleOverview() {
 		for (const oneArticle of articles2) {
 			const article = createArticle(oneArticle.link, oneArticle.gridClass);
 			const image = createImage(oneArticle.image, oneArticle.alt); 
-			article.append(image);
 			const card = createCard(oneArticle.header, oneArticle.title);
+
+			article.append(image);
 			image.append(card);
 			articlesOverview2Container.append(article);
 		}
@@ -101,11 +103,12 @@ export default function ArticleOverview() {
 
 		function createImage(source, alt) {
 			const imageContainer = document.createElement('div');
-			imageContainer.className = 'article-overview__image';
-
 			const image = document.createElement('img');
+			
+			imageContainer.className = 'article-overview__image';
 			image.src = source;
 			image.alt = alt;
+
 			imageContainer.append(image);
 			
 			return imageContainer;
@@ -113,15 +116,16 @@ export default function ArticleOverview() {
 
 		function createCard(header, title) {
 			const card = document.createElement('div');
-			card.className = 'article-overview__card';
-	
 			const cardHeader = document.createElement('p');
-			cardHeader.className = 'article-overview__header';
-			cardHeader.innerText = header;
-	
 			const cardTitle = document.createElement('p');
+
+			card.className = 'article-overview__card';
+			cardHeader.className = 'article-overview__header';
 			cardTitle.className = 'article-overview__title';
+
+			cardHeader.innerText = header;
 			cardTitle.innerText = title;
+			
 			card.append(cardHeader);
 			card.append(cardTitle);
 			
