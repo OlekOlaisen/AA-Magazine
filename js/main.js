@@ -1,4 +1,4 @@
-import ArticleOverview from './modules/Article-overview.js';
+import ArticleOverview from './modules/article-overview.js';
 import Hamburger from './modules/hamburger-menu.js';
 import Header from './modules/header.js';
 import Events from './modules/events.js';
