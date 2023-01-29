@@ -43,6 +43,8 @@
 		border: 1px solid var(--first-color);
 	}
 
+
+
 	.sidebar__event-buttons {
 		display: block;
 	}
@@ -90,6 +92,11 @@
 	.sidebar__events-toggle--active {
 		background-color: var(--second-color);
 		color: var(--first-color);
+	}
+
+	.sidebar__events-toggle-darkmode--active {
+		background-color: var(--first-color);
+		color: var(--second-color);
 	}
 
 }
