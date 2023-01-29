@@ -33,6 +33,7 @@ export default function Events() {
     
     const filterEvents = document.querySelector(".sidebar__events");
     const filterEventButtons = document.querySelectorAll(".sidebar__events-toggle");
+    const filterEventButtonsDarkmode = document.querySelectorAll(".event-darkmode");
     
     for (const toggle of filterEventButtons) {
         toggle.addEventListener('click', handleFilterEventButtonsClick);
@@ -58,16 +59,23 @@ export default function Events() {
             return events.filter(event => event.category === currentFilter);
         }
     }
-
+    
     renderEvents();
     
     function renderEvents() {
         filterEvents.innerHTML = '';
         
         for (const toggle of filterEventButtons) {
-            toggle.classList.remove('sidebar__events-toggle--active');
+            toggle.classList.remove('sidebar__events-toggle--active');  
             if(toggle.dataset.filter === currentFilter) {
                 toggle.classList.add('sidebar__events-toggle--active');
+            }
+        }
+
+        for (const toggle of filterEventButtonsDarkmode) {
+            toggle.classList.remove('sidebar__events-toggle-darkmode--active');  
+            if(toggle.dataset.filter === currentFilter) {
+                toggle.classList.add('sidebar__events-toggle-darkmode--active');
             }
         }
         
